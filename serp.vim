@@ -34,7 +34,7 @@ syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ lost mcvol micro memfrac minxs mvol nbuf nfg nfylib
 			\ nphys nps outp poi pop ppid ppw relfactor rfr rfw
 			\ root sacesrc seed spd sfylib title tcut tpa transnorm
-			\ trc ures usym opti
+			\ trc ures usym opti power pcc
 
 " some other statements
 syn keyword serpStatement branch cell coef det div ftrans fun ifc lat mat mesh

@@ -11,6 +11,7 @@ Wondering what Serpent 2 is? http://montecarlo.vtt.fi/
 3. add this single line in the new serp.vim file:
 
     `au BufRead,BufNewFile *.serp set filetype=serp`
+    
     `au BufRead,BufNewFile *.<whatever serpent file extension you want> set filetype=serp`
     
 4. Voila! Files ending in ".serp" will have highlighted serpent syntax.

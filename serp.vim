@@ -26,6 +26,9 @@ syn match   serpNumber	"\<0[xX]\x\+[Ll]\=\>"
 syn match   serpNumber	"\<0[bB][01]\+[Ll]\=\>"
 syn match   serpNumber	"\<\%([1-9]\d*\|0\)[Ll]\=\>"
 
+" detects ZAID nuclear data libraries
+syn match   serpIsotope "[0-9]*\.0[369]c"
+
 " built in valid parameters to set
 syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ coefpara comfile confi csw declib delnu depout
@@ -34,7 +37,7 @@ syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ lost mcvol micro memfrac minxs mvol nbuf nfg nfylib
 			\ nphys nps outp poi pop ppid ppw relfactor rfr rfw
 			\ root sacesrc seed spd sfylib title tcut tpa transnorm
-			\ trc ures usym opti power pcc
+			\ trc ures usym opti power pcc dx dy dz ene dr
 
 " some other statements
 syn keyword serpStatement branch cell coef det div ftrans fun ifc lat mat mesh

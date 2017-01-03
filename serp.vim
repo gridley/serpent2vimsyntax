@@ -54,3 +54,4 @@ hi def link serpString    String
 hi def link serpTodo      Todo
 hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
+hi def link serpIsotope   String

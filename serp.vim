@@ -24,7 +24,7 @@ syn region  serpString matchgroup=serpQuotes
 syn match   serpNumber	"\<0[oO]\=\o\+[Ll]\=\>"
 syn match   serpNumber	"\<0[xX]\x\+[Ll]\=\>"
 syn match   serpNumber	"\<0[bB][01]\+[Ll]\=\>"
-syn match   serpNumber	"\<\%([0-9]\d*\|0\)[eE]\{0,1\}[Ll]\=\>"
+syn match   serpNumber	"\<\%(\d*\|0\)[eE]\{0,1\}[Ll]\=\>"
 
 " detects ZAID nuclear data libraries
 syn match   serpIsotope "[0-9]*\.0[369]c"

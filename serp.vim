@@ -1,6 +1,6 @@
 " Vim syntax file for serpent 2 (not sure if all keywords are in serp 1)
 " Language: Serpent Input file
-" Maintainer: Gavin Ridley
+" Maintainer: Gavin Ridley, Travis Labossiere-Hickman
 " Latest Rev: Jul 11, 2017
 " ***utterly plagiarized from the python.vim syntax file***
 "

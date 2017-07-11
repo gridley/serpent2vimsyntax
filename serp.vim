@@ -27,6 +27,8 @@ syn match   serpNumber	"\<\%(\d*\|0\)[eE]\{0,1\}[Ll]\=\>"
 
 " detects ZAID nuclear data libraries
 syn match   serpIsotope "\d*\.\d\dc"
+" detects thermal scattering data libraries
+syn match   serpScatter "\(lwtr\|hwtr\|grph\)\.\d\dt"
 
 " built in valid parameters to set
 syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
@@ -54,3 +56,5 @@ hi def link serpTodo      Todo
 hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
 hi def link serpIsotope   Type
+hi def link serpScatter   Type
+

@@ -1,10 +1,9 @@
 " Vim syntax file for serpent 2 (not sure if all keywords are in serp 1)
 " Language: Serpent Input file
 " Maintainer: Gavin Ridley
-" Latest Rev: Dec 21, 2016
+" Latest Rev: Jul 11, 2017
 " ***utterly plagiarized from the python.vim syntax file***
 "
-" TODO: make nuclear data libraries look good <- requires a good regex
 " TODO: not all 'set' options are included
 
 if exists("b:current_syntax")
@@ -27,7 +26,9 @@ syn match   serpNumber	"\<0[bB][01]\+[Ll]\=\>"
 syn match   serpNumber	"\<\%(\d*\|0\)[eE]\{0,1\}[Ll]\=\>"
 
 " detects ZAID nuclear data libraries
-syn match   serpIsotope "[0-9]*\.0[369]c"
+syn match   serpIsotope "\d*\.\d\dc"
+" detects thermal scattering data libraries
+syn match   serpScatter "\(lwtr\|hwtr\|grph\)\.\d\dt"
 
 " built in valid parameters to set
 syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
@@ -54,4 +55,6 @@ hi def link serpString    String
 hi def link serpTodo      Todo
 hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
-hi def link serpIsotope   String
+hi def link serpIsotope   Type
+hi def link serpScatter   Type
+

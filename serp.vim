@@ -33,10 +33,10 @@ syn match   serpScatter "\(lwtr\|hwtr\|grph\)\.\d\dt"
 " built in valid parameters to set
 syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ coefpara comfile confi csw declib delnu depout
-			\ dfsol dynsrc dt entr fininitfile fissh forcedt
+			\ dfsol dynsrc dt entr fill fininitfile fissh forcedt
 			\ fsp fum gbuf gcu gcut his impl inventory isobra
 			\ lost mcvol micro memfrac minxs mvol nbuf nfg nfylib
-			\ nphys nps outp poi pop ppid ppw relfactor rfr rfw
+			\ nphys nps outp poi pop ppid ppw relfactor rfr rfw rgb
 			\ root sacesrc seed spd sfylib title tcut tpa transnorm
 			\ trc ures usym opti power pcc dx dy dz ene dr
 

@@ -13,6 +13,7 @@ endif
 
 " comments, TODO's , and quotes
 syn match   serpComment	"%.*$" contains=serpTodo,@Spell
+syn region  serpComment start="/\*" end="\*/"
 syn keyword serpTodo FIXME NOTE TODO XXX contained
 syn region  serpString matchgroup=serpQuotes
       \ start=+[uU]\=\z(['"]\)+ end="\z1" skip="\\\\\|\\\z1"

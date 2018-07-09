@@ -46,6 +46,11 @@ syn keyword serpStatement branch cell coef det div ftrans fun ifc lat mat mesh
 			\ particle pin plot solid src strans surf therm thermstoch
 			\ tme trans transv transa utrans wwgen wwin set
 
+" geometry
+syn keyword serpGeom sqc px py pz plane cylx cyly cylz cyl cylv sph cone quadratic
+			\ inf tox toy torz rect hexxc hexyc hexxprism hexyprism octa dode
+			\ cube cuboid ppd pad cross gcross usr
+
 syn keyword serpPreproc include
 
 let b:current_syntax = "serp"
@@ -56,6 +61,7 @@ hi def link serpString    String
 hi def link serpTodo      Todo
 hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
+hi def link serpGeom      Identifier
 hi def link serpIsotope   Type
 hi def link serpScatter   Type
 

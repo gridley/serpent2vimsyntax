@@ -40,9 +40,10 @@ syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ nphys nps outp poi pop ppid ppw relfactor rfr rfw rgb
 			\ root sacesrc seed spd sfylib title tcut tpa transnorm
 			\ trc ures usym opti power pcc dx dy dz ene dr
+			\ mdep de dm du dh dc tmp tft rgb vol burn flux
 			\ sw sc sm sp sx sy sz ss sd se sb sr st sf si sg
 			\ sie powdens daystep daytot bustep butot decstep dectot
-			\ depmtx
+			\ depmtx repro moder
 
 " some other statements
 syn keyword serpStatement branch cell coef det div ftrans fun ifc lat mat mesh

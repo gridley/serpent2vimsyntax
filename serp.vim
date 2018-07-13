@@ -41,11 +41,14 @@ syn keyword serpSet acelib adf alb arr bc blockdt bralib ccmaxiter ccmaxpop
 			\ root sacesrc seed spd sfylib title tcut tpa transnorm
 			\ trc ures usym opti power pcc dx dy dz ene dr
 			\ sw sc sm sp sx sy sz ss sd se sb sr st sf si sg
+			\ sie powdens daystep daytot bustep butot decstep dectot
+			\ depmtx
 
 " some other statements
 syn keyword serpStatement branch cell coef det div ftrans fun ifc lat mat mesh
 			\ particle pin plot solid src strans surf therm thermstoch
 			\ tme trans transv transa utrans wwgen wwin set
+			\ dep
 
 " geometry
 syn keyword serpGeom sqc px py pz plane cylx cyly cylz cyl cylv sph cone quadratic
@@ -58,6 +61,9 @@ syn keyword serpEneGroups default2 defaultmg nj2 nj3 nj4 nj5 nj8 nj9 nj11 nj14
 			\ mupo43 scale44 scale238
 syn keyword serpPreproc include
 
+" Some special keywords that have special meaning in SERPENT
+syn keyword serpSpecial outside sum all CE CELI LE LELI LEQI
+
 let b:current_syntax = "serp"
 hi def link serpStatement Statement
 hi def link serpSet       Special
@@ -68,6 +74,7 @@ hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
 hi def link serpGeom      Identifier
 hi def link serpEneGroups Identifier
+hi def link serpSpecial   Identifier
 hi def link serpIsotope   Type
 hi def link serpScatter   Type
 

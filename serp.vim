@@ -52,6 +52,10 @@ syn keyword serpGeom sqc px py pz plane cylx cyly cylz cyl cylv sph cone quadrat
 			\ inf tox toy torz rect hexxc hexyc hexxprism hexyprism octa dode
 			\ cube cuboid ppd pad cross gcross usr
 
+syn keyword serpEneGroups default2 defaultmg nj2 nj3 nj4 nj5 nj8 nj9 nj11 nj14 
+			\ nj16 nj17 nj18 nj19 nj20 nj21 nj22 nj23 wms69 wms172 cas70 cas40
+			\ cas25 cas23 cas18 cas16 cas14 cas12 cas9 cas8 cas7 cas4 cas3 cas2
+			\ mupo43 scale44 scale238
 syn keyword serpPreproc include
 
 let b:current_syntax = "serp"
@@ -63,6 +67,7 @@ hi def link serpTodo      Todo
 hi def link serpComment   Comment
 hi def link serpPreproc   PreProc
 hi def link serpGeom      Identifier
+hi def link serpEneGroups Identifier
 hi def link serpIsotope   Type
 hi def link serpScatter   Type
 

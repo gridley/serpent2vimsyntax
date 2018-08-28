@@ -6,15 +6,24 @@ Right now, this is only tested on a linux OS.
 Wondering what Serpent 2 is? http://montecarlo.vtt.fi/
 
 ## How to install
-1. Copy the serp.vim file into either ~/.vim/syntax or \<vim_install_directory>/syntax
-2. Make another file called serp.vim in ~/.vim/ftdetect
-3. add this single line in the new serp.vim file:
 
-    `au BufRead,BufNewFile *.serp set filetype=serp`
-    
-    `au BufRead,BufNewFile *.<whatever serpent file extension you want> set filetype=serp`
-    
-4. Voila! Files ending in ".serp" will have highlighted serpent syntax.
+### Manually
+
+1. Copy the syntax/serp.vim file into either ~/.vim/syntax/ or \<vim_install_directory>/syntax/
+1. Copy the ftdetect/serp.vim file into either ~/.vim/ftdetect/ or \<vim_install_directory>/ftdetect/
+1. To update, copy over the serp.vim file with the new version.
+1. Voila! Files ending in ".serp" will have highlighted serpent syntax.
+
+### With Vundle
+
+1. Follow instructions at [Vundle](https://github.com/VundleVim/Vundle.vim) to set up the plugin manager.
+1. At the proper place in your `.vimrc` place:
+    ```vim
+    Plugin 'gridley/serpent2vimsyntax'
+    ```
+1. Install by opening Vim and using the command `:PluginInstall`.
+1. Keep up-to-date with the command `:PluginUpdate`.
+1. Voila! Files ending in ".serp" will have highlighted serpent syntax.
     
 ## Preview:
 
